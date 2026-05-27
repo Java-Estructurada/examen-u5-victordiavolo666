@@ -1,17 +1,26 @@
 public class examen{
     static String [] nCuadrillas = {"Los Halcones","Cuadrilla Norte","Fuerza Verde"};
     static int [][] cSemanas ={ {120,135,110,140,150},
+    public static void main(String[]args){
+    nCuadrillas = new String[]{"Los Halcones","Cuadrilla Norte","Fuerza Verde"};
+    cSemanas = new int[][]{ {120,135,110,140,150},
                         {90,105,100,115,120},
                         {150,160,155,170,165}};
     public static void main(String[]args){
     }
         public static int calcularTotalSemana(int[] arreglo){
+
+    static String[] nCuadrillas;
+    static int[][] cSemanas;
+    //modulo 1  
+    public static int calcularTotalSemana(int[] arreglo){
         int acumulador =0;
         for(int i=0;i<arreglo.length;i++){
         acumulador = acumulador + arreglo[i];
 }
         return acumulador;
     }
+    //modulo 2
     public static void generarReporteGeneral(){
         int[] lHalcones = cSemanas[0];
         int totalHalcones = calcularTotalSemana(lHalcones);
